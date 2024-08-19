@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Database connection parameters
-$servername = "u381914726_contact_db";
+$servername = "localhost";
 $username = "u381914726_admin";
 $password = "DJ5t3}03w&&*e)(RLDHA";
 $dbname = "u381914726_contact_db";
