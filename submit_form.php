@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database";
+$servername = "u381914726_contact_db";
+$username = "u381914726_admin";
+$password = "DJ5t3}03w&&*e)(RLDHA";
+$dbname = "enquiry";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,7 +20,7 @@ $email_address = $_POST['email_address'];
 $message = $_POST['message'];
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO contacts (full_name, phone_number, email_address, message) VALUES (?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO inquiry (Full_name, Phone_number, Email, Message) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $full_name, $phone_number, $email_address, $message);
 
 // Execute the statement
