@@ -24,7 +24,7 @@ $email_address = $_POST['email_address'];
 $message = $_POST['message'];
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO inquiry (Full_name, Phone_number, Email, Message) VALUES (?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO Inquiry (Full_name, Phone_number, Email, Message) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $full_name, $phone_number, $email_address, $message);
 
 // Execute the statement
