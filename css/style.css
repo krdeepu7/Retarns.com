@@ -72,7 +72,7 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/her-bg6.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   //filter: blur(8px); /* Apply blur directly */
   
