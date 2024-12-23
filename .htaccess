@@ -1,8 +1,0 @@
-# Redirect /index.html to /
-RewriteEngine On
-RewriteCond %{THE_REQUEST} /index\.html [NC]
-RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
-
-# Redirect /services.html to /services/
-RewriteCond %{THE_REQUEST} /services\.html [NC]
-RewriteRule ^(.*)services\.html$ /$1services/ [R=301,L]
